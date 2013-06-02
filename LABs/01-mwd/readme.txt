@@ -1,11 +1,11 @@
+Note: download connect module from this link(npm install git://github.com/senchalabs/connect.git#1.8.6
+), becuase this is compatible with this lab.  
 
 Mobile Web Development
 Lab 01
 11 Sep 2012
 Richard Rodger
 richard.rodger@nearform.com
-
-
 
 
 Objectives
