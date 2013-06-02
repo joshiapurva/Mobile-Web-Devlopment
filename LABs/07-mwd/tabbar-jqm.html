@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Tab Bar App</title> 
+  <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+
+  <link rel="stylesheet" href="jquery.mobile.css" />
+  <link rel="stylesheet" href="tabbar-jqm.css" />
+
+  <script src="jquery.js"></script>
+  <script src="jquery.mobile.js"></script>
+  <script src="tabbar-jqm.js"></script>
+
+</head> 
+<body> 
+
+<div id="main" data-role="page">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Tab Bar</h1>
+  </div>
+
+  <div data-role="content">	
+    <div id="content_numbers" class="content scroller">
+      <ul data-role="listview">
+        <li>0</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li>
+        <li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li>
+        <li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li>
+        <li>24</li><li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li><li>32</li>
+      </ul>
+    </div>
+
+    <div id="content_letters" class="content scroller">
+      <ul data-role="listview">
+        <li>a</li><li>b</li><li>c</li><li>d</li>
+        <li>e</li><li>f</li><li>g</li><li>h</li>
+        <li>i</li><li>j</li><li>k</li><li>l</li>
+        <li>m</li><li>n</li><li>o</li><li>p</li>
+        <li>q</li><li>r</li><li>s</li><li>t</li>
+        <li>u</li><li>v</li><li>w</li><li>x</li>
+        <li>y</li><li>z</li>
+      </ul>
+    </div>
+
+    <div id="content_colors" class="content scroller">
+      <ul data-role="listview">
+        <li>red</li>
+        <li>green</li>
+        <li>blue</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="footer" data-role="footer" class="ui-bar" data-position="fixed">
+    <div data-role="navbar" class="ui-navbar">
+      <ul class="ui-grid-b">
+        <li><a id="tab_numbers">numbers</a></li>
+        <li><a id="tab_letters">letters</a></li>
+        <li><a id="tab_colors">colors</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>

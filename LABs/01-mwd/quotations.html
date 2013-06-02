@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0" />
+
+  <style>
+    a { 
+      display: inline-block; 
+      border: 2px solid black; 
+      border-radius: 5px;
+      padding: 10px;
+      text-decoration: none;
+      font-family: arial;
+    }
+  </style>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>
+    window.onload = function() {
+      var elem = {}
+      $('p').each(function(){
+        var id = $(this).attr('id')
+        elem[id] = $(this)
+      })
+
+      $('a').click(function(){
+        var who = $(this).attr('id')
+        $.getJSON('/api/quote/'+who, function(data) {
+          elem.who.text(who)
+          elem.quote.text( data.text )
+        })
+      })
+    }
+  </script>
+</head> 
+<body>
+  <p>
+    Get a quote from:<br />
+    <a href="#" id="feynman">Feynman</a>
+    or
+    <a  href="#" id="einstein">Einstein</a>
+  </p>
+  <p id="quote"></p>
+  <p id="who"></p>
+
+</body>
+</html>

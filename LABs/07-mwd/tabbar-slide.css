@@ -1,0 +1,49 @@
+
+div {
+  padding: 0px !important;
+}
+
+ul {
+  margin: 0px !important;
+}
+
+p {
+  margin: 0px !important;
+}
+
+div.content {
+  display: none;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+div.leftin {
+  -webkit-animation-duration: .4s;
+  -webkit-animation-name: leftin;
+}
+
+div.rightin {
+  -webkit-animation-duration: .4s;
+  -webkit-animation-name: rightin;
+}
+
+
+@-Webkit-keyframes leftin {
+  from { 
+    -webkit-transform: translateX(100%);
+  }
+  to { 
+    -webkit-transform: translateX(0);
+   }
+}
+
+
+@-webkit-keyframes rightin {
+  from { 
+    -webkit-transform: translateX(-100%);
+  }
+  to { 
+    -webkit-transform: translateX(0);
+   }
+}
+

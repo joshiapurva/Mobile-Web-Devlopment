@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Test</title> 
+  <script src="js/jquery.js"></script>
+  <script src="js/server-test.js"></script>
+</head> 
+<body> 
+<p>
+Open the Web Inspector Console, and try:
+</p>
+
+<code>
+http.get('/api/ping')<br />
+http.post('/api/echo',{a:1})<br />
+function printjson() { console.log(JSON.stringify(arguments[0])) }<br />
+http.get('/api/ping',printjson)<br />
+http.post('/api/echo',{a:1},printjson)<br />
+</code>
+
+</body>
+</html>
+
+
+
