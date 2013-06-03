@@ -1,6 +1,6 @@
 
 var dbutil = require('./db-util')
-//var dbutil = require('./db-auth')
+var dbutil = require('./db-auth')
 
 
 var client
