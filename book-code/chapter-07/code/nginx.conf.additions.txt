@@ -1,0 +1,4 @@
+
+location /enhanced/ {
+  alias /path/to/your/enhanced/;
+}

@@ -1,0 +1,8 @@
+
+#main, #footer {
+  padding: 0px;
+}
+
+div.content {
+  display:none;
+}

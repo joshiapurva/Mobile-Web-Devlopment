@@ -1,0 +1,134 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+  <title>Tonvo App</title> 
+  <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+
+  <link rel="stylesheet" href="jquery.mobile.css" />
+  <link rel="stylesheet" href="tonvo.css" />
+
+  <script src="phonegap.0.9.5.1.min.js"></script>
+
+  <script src="jquery.js"></script>
+  <script src="jquery.mobile.js"></script>
+  <script src="oauth.js"></script>
+  <script src="sha1.js"></script>
+  <script src="date.js"></script>
+  <script src="tonvo.js"></script>
+</head> 
+<body> 
+<div id="main" data-role="page">
+
+  <div data-role="header" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a id="nav_inbox">Inbox</a></li>
+        <li><a id="nav_people">People</a></li>
+        <li><a id="nav_accounts">Accounts</a></li>
+      </ul>
+    </div
+  </div>
+
+  <div id="con_inbox" data-role="content" class="con hide">	
+    <div id="inbox_refresh" data-role="header" data-theme="b">
+      refreshing...
+    </div>
+    <ul id="inbox_itemlist" data-role="listview">
+      <li id="inbox_item_tm" class="hide">
+        <a>
+        <div class="inbox_item_head">
+          <span class="from"></span>
+          <span class="name"></span>
+          <br />
+          <span class="when"></span>
+          <img class="network_img">
+          <span class="nick"></span>
+        </div>
+        <div class="subject"></div>
+        </a>
+      </li>
+    </ul>
+
+
+    <div style="height:480px"></div>
+  </div>
+
+
+  <div id="con_convo" data-role="content" class="con hide">	
+    <img id="convo_avatar" />
+    <h1 id="convo_other">convo</h1>
+    <p style="clear:both">
+      <img id="convo_network" />
+      <span id="convo_me"></span>
+    </p>
+    <textarea id="convo_compose"></textarea>
+    <a id="convo_send" data-role="button" data-inline="true">send</a>
+    
+    <ul id="convo_list">
+      <li id="convo_msg_tm" class="convo_msg" class="hide">
+        <p class="meta"></p>
+        <p class="body"></p>
+        <p class="who"><p>
+      </li>
+    </ul>
+  </div>
+  
+
+  <div id="con_people" data-role="content" class="con hide">	
+      <ul id="people_list" data-role="listview" >
+        <li id="people_network_tm" class="hide network" data-role="list-divider">
+          <img class="network">
+          <p class="details">
+            <span class="nick"></span>
+          </p>
+        </li>
+        <li id="people_divider_tm" class="hide divider" data-role="list-divider" data-theme="e">
+          <span class="char"></span>
+        </li>
+        <li id="people_person_tm" class="hide person">
+          <img class="avatar">
+          <a class="person">
+            <p class="details">
+              <span class="nick"></span>
+              <span class="name"></span>
+            </p>
+          </a>
+        </li>
+      </ul>
+  </div>
+
+  <div id="con_accounts" data-role="content" class="con hide">	
+
+
+    <div id="accounts_login" data-role="collapsible">
+      <h3>Account Sign-in</h3>
+
+      <p>
+        <a id="accounts_signin_twitter" class="signin">
+          <img src="img/twitter.png">
+        </a>
+      </p>
+
+    </div>
+
+    <div data-role="collapsible">
+      <h3>Your Accounts</h3>
+      <ul id="accounts_list" data-role="listview" data-inset="true">
+        <li id="accounts_item_tm" class="hide">
+          <img class="avatar">
+          <p class="details">
+            <span class="nick"></span>
+          </p>
+          <img class="network">
+        </li>
+      </ul>
+    </div>
+
+    <div id="debug"></div>
+
+  </div>
+
+</div>
+</body>
+</html>

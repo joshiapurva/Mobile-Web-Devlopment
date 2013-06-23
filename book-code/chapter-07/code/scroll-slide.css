@@ -1,0 +1,25 @@
+
+div {
+  padding: 0px !important;
+}
+
+ul, p {
+  margin: 0px !important;
+}
+
+div.content {
+  display: none;
+  -webkit-backface-visibility: hidden;
+  -webkit-animation-duration: .2s;
+  -webkit-animation-name: inbound;
+}
+
+@-webkit-keyframes inbound {
+  from { 
+    -webkit-transform: translateY(100%);
+  }
+  to { 
+    -webkit-transform: translateY(0);
+  }
+}
+

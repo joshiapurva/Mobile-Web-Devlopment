@@ -1,0 +1,8 @@
+location /todo/sync/ {
+  alias /path/to/your/todosync/;
+}
+
+location /todo/sync/api {
+  proxy_pass http://127.0.0.1:3001/todo/sync/api;
+}
+

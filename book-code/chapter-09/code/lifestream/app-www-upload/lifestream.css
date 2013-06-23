@@ -1,0 +1,27 @@
+
+#main {
+  width: 320px;
+}
+
+#logo {
+  position: absolute;
+  top:7px;
+  left:44px;
+}
+
+#con_post {
+  display:none;
+}
+
+#post_pic {
+  display: block;
+  margin: 0px auto;
+  width:  200px;
+  height: 200px;
+  border: 1px solid #ccc;
+}
+
+#post_msg {
+  text-align: center;
+  font-weight: bold;
+}

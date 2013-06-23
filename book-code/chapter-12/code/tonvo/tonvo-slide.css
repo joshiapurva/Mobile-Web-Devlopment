@@ -1,0 +1,229 @@
+
+div { -webkit-transform:translate3d(0,0,0); }
+
+div.con {
+  position: absolute;
+  top: 36px;
+  left: 0px;
+  width: 290px;
+  background: #eee;
+  min-height:1024px;
+}
+
+
+
+.inbox_item_head span {
+  margin-right: 10px;
+}
+
+.inbox_item_head span.name {
+  font-weight: normal;
+}
+
+.inbox_item_head span.when {
+  font-weight: normal;
+}
+
+.inbox_item_head span.network {
+  font-weight: normal;
+}
+
+
+.hide {
+  display: none !important;
+}
+
+.clear {
+  clear: both;
+}
+
+
+
+
+#people_list li.network {
+  padding: 0px 0px 0px 80px;
+}
+#people_list li.network p.details {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 72px;
+  margin: 0px;
+}
+
+#people_list img.network {
+  margin: 4px;
+  width: 64px;
+  height: 64px;
+}
+
+#people_list img.avatar {
+  margin: 2px;
+  width: 32px;
+  height: 32px;
+}
+
+#people_list li.person {
+  height: 38px;
+}
+
+#people_list li.person a {
+  padding-left: 44px;
+}
+
+#people_list li.person p.details {
+  font-size: 14px;
+  line-height: 32px;
+}
+
+#people_list li.person p.details span.name {
+  font-size: 10px;
+  font-style: italic;
+}
+
+
+
+#accounts_list li {
+  height: 65px;
+  padding: 10px 0px 0px 80px;
+}
+
+#accounts_list p.details {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 80px;
+}
+
+#accounts_list img.avatar {
+  margin: 5px;
+  width: 64px;
+  height: 64px;
+}
+
+#accounts_list img.network {
+  margin: 5px;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+
+
+
+#inbox_item_tm {
+  display: none;
+}
+
+#inbox_refresh {
+  display: none;
+  height: 30px;
+  padding: 5px;
+}
+
+div.inbox_item_head img {
+  float: none;
+  position: static;
+}
+
+div.inbox_item_head span {
+  font-size: small;
+  font-style: italic;
+}
+
+div.inbox_item_head span.from {
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+
+div.inbox_item_head img.network_img {
+  margin: 0px 12px 0px 0px;
+}
+
+div.inbox_item_head span.nick {
+  font-weight: normal;
+}
+
+#inbox_itemlist li {
+  padding: 10px 10px 0px 0px;
+}
+
+#inbox_itemlist div.subject {
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+#inbox_convo {
+  display: none;
+}
+
+
+#convo_avatar {
+  margin: 0px;
+  width: 32px;
+  float:left;
+}
+
+#convo_other {
+  margin: 0px 0px 0px 5px;
+  float: left;
+}
+
+#convo_compose {
+  width: 200px;
+  height: 50px;
+  float: left;
+}
+
+#convo_send {
+  width: 50px;
+  height: 62px;
+  float: left;
+  margin: 0px 0px 0px 5px;
+}
+
+#convo_send span {
+  padding: 5px 0px;
+  line-height: 52px;
+}
+
+
+#convo_list {
+  width: 260px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px 0px;
+  clear: both;
+}
+
+li.convo_msg {
+  width: 200px;
+  margin: 5px 0px;
+  padding: 5px;
+  border: 2px solid #666;
+  -webkit-border-radius: 5px;
+  background-color: #aab;
+  text-shadow: none;
+}
+
+li.convo_msg p {
+  padding: 0px;
+  margin: 0px;
+}
+
+li.convo_msg p.meta {
+  padding: 0px;
+  font-size: small;
+  font-style: italic;
+  color: #666;
+}
+
+li.convo_msg p.who {
+  padding: 0px;
+  font-size: small;
+  text-align: right;
+  font-style: italic;
+  color: #666;
+}
+
