@@ -1,10 +1,10 @@
 
 exports.mongohq   = { 
-  username: 'YOUR_DB_USERNAME',      
-  password: 'YOUR_DB_PASSWORD',
-  name:     'YOUR_DB_NAME',
-  host:     'YOUR_DB_HOST',
-  port:     YOUR_DB_PORT
+  username: 'test',      
+  password: 'pass',
+  name:     'lifestream',
+  host:     'dharma.mongohq.com',
+  port:     10034
 }
 
 exports.amazon   = { 
@@ -14,8 +14,8 @@ exports.amazon   = {
 }
 
 exports.twitter  = { 
-  keyid:  'YOUR_TWITTER_KEY_ID',  
-  secret: 'YOUR_TWITTER_SECRET' 
+  keyid:  '5Ce9pkIMCu6BifnrGylDg',  
+  secret: 'Qdevmv4yWFBkxpwdF3c2EdTbgz1yJrK8R7T1WhXlhs' 
 }
 
 exports.facebook = { 
@@ -23,6 +23,6 @@ exports.facebook = {
   secret: 'YOUR_FACEBOOK_SECRET' 
 }
 
-exports.server = 'YOUR_IP_ADDRESS'
+exports.server = '192.168.220.51'
 exports.max_stream_size = 100
 
